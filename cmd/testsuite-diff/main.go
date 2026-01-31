@@ -122,7 +122,7 @@ func main() {
 	if !foundInA && !foundInB {
 		fmt.Println("No missing testsuites found.")
 	}
-	if (*allsuites) {
+	if *allsuites {
 		combined := append(suitesInA, suitesInB...)
 		sortedSuites := make([]string, 0, len(combined))
 		for _, k := range combined {
